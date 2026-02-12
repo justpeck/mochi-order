@@ -655,7 +655,7 @@
 
     <script>
         // ⚠️ สำคัญ! แก้ไข URL นี้ให้เป็น Web App URL ของคุณ
-        const SCRIPT_URL = 'ใส่ Web App URL ของคุณที่นี่';  // ⬅️ แก้ตรงนี้
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwgVYhhFiO9M02St7L5O_38x2m7Cf0MlQqmz3nOrGNHEGPGGamF-yjCD6gyzzLpfa1Y/exec';  // ⬅️ แก้ตรงนี้
 
         // ราคาเมนู
         const prices = {
@@ -771,7 +771,7 @@
             e.preventDefault();
             
             // ตรวจสอบว่าใส่ URL แล้ว
-            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbz4w9UynUOyTXBzBdNLXMtC-2WA1l9st8gOux8GL-u4-JYQtt0YYLMtRS42y_Nhj6yk/exec') {
+            if (SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbwgVYhhFiO9M02St7L5O_38x2m7Cf0MlQqmz3nOrGNHEGPGGamF-yjCD6gyzzLpfa1Y/exec') {
                 alert('❌ กรุณาแก้ไข SCRIPT_URL ในโค้ด JavaScript ก่อนใช้งาน\n\nให้ไปแก้ไขที่บรรทัด:\nconst SCRIPT_URL = \'ใส่ Web App URL...\'');
                 return;
             }
@@ -830,7 +830,7 @@
                     method: 'POST',
                     mode: 'no-cors',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'text/plain;charset=utf-8'
                     },
                     body: JSON.stringify(orderData)
                 });
